@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    gap: 355px;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.section > img{
+    width: 11%;
+    animation: rotate 5s linear infinite;
+}
+.carBody{
+    position: absolute;
+    left: 18.8%;
+    bottom: -80px;
+}
+.carBody img{
+    width: 130%;
+}
